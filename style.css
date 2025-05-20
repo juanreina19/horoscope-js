@@ -1,0 +1,83 @@
+body {
+    font-family: "Cascadia Code", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #303038;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(48, 48, 56, 1) 0%, rgba(52, 52, 79, 1) 50%, rgba(85, 85, 130, 1) 100%);
+}
+
+#horoscope-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#horoscope-container.visible {
+    opacity: 1;
+}
+
+#horoscope-container.fade-out {
+    opacity: 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-family: 'Cascadia Code', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 1rem;
+    font-family: 'Cascadia Code', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#horoscope-form label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
